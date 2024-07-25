@@ -16,15 +16,22 @@ $ lua -v
 Lua 5.4.6  Copyright (C) 1994-2023 Lua.org, PUC-Rio
 ```
 
-Install the luasocket package (I chose `luarocks` for this):
+Install the [luasocket](https://github.com/lunarmodules/luasocket) package (I chose `luarocks` for this):
 ```shell
 $ luarocks install luasocket
+```
+
+Also install the [mimetypes](https://github.com/lunarmodules/lua-mimetypes) package:
+```shell
+$ luarocks install mimetypes
 ```
 
 Start the server:
 ```shell
 $ lua httpserver.lua
 ```
+
+NOTE: Testing against Google Chrome works fine. There seems to be an issue with Safari which needs more study.
 
 ### python
 
@@ -86,9 +93,10 @@ A request for a non-existant file returns the following:
 ```shell
 $ curl -i --http0.9 127.0.0.1:8888/notafile.txt
 HTTP/1.1 404 Not Found
-content-type: text/html;charset=UTF-8
+Server: ToyServer (python)
+Content-Type: text/html
 
-<h1>404 Not Found</h1>⏎
+<h1>404 Not Found</h1>
 ```
 
 ## References
@@ -96,6 +104,8 @@ content-type: text/html;charset=UTF-8
 ### lua
 
 - [LuaSocket: Introduction to the core](https://lunarmodules.github.io/luasocket/introduction.html)
+- [Programming in Lua](https://www.lua.org/pil/contents.html)
+- [Lua Style Guide](https://github.com/Olivine-Labs/lua-style-guide)
 
 ### python
 
