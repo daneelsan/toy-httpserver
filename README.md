@@ -59,7 +59,7 @@ Start the server:
 wolframscript -f httpserver.wl
 ```
 
-### zig (work in progress)
+### zig
 
 Start the server:
 ```shell
@@ -120,8 +120,8 @@ Content-Type: text/html
 
 ### zig
 
-- [Socket programming in Zig (YouTube)](https://www.youtube.com/watch?v=V7Jql_SZ7kY)
 - [Writing a HTTP Server in Zig](https://www.pedaldrivenprogramming.com/2024/03/writing-a-http-server-in-zig/)
+- [Socket programming in Zig (YouTube)](https://www.youtube.com/watch?v=V7Jql_SZ7kY)
 - [Zig Bits 0x4: Building an HTTP client/server from scratch](https://blog.orhun.dev/zig-bits-04/)
 - [Creating UDP server from scratch in Zig](https://blog.reilly.dev/creating-udp-server-from-scratch-in-zig)
 
