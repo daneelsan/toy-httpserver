@@ -8,7 +8,7 @@ The server currently only handles the GET method, but it could be easily be expa
 
 Start the HTTP server in various languages:
 
-### lua (work in progress)
+### lua
 
 Tested on:
 ```shell
