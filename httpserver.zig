@@ -100,7 +100,7 @@ const HTTPRequest = struct {
             error.FileNotFound => {
                 // Send a 404 Not Found response if the file is not found
                 const response = "HTTP/1.1 404 NOT FOUND \r\n" ++
-                    "Connection: close\r\n" ++
+                    "Server: ToyServer (zig)\r\n" ++
                     "Content-Type: text/html; charset=utf8\r\n" ++
                     "Content-Length: 9\r\n" ++
                     "\r\n" ++
@@ -120,7 +120,7 @@ const HTTPRequest = struct {
         // Send a 200 OK response with the file contents
         // TODO: get the response line and headers from other utility functions
         const response = "HTTP/1.1 200 OK \r\n" ++
-            "Connection: close\r\n" ++
+            "Server: ToyServer (zig)\r\n" ++
             "Content-Type: {s}\r\n" ++
             "Content-Length: {}\r\n" ++
             "\r\n";
