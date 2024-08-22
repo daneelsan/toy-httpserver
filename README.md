@@ -59,6 +59,8 @@ Start the server:
 wolframscript -f httpserver.wl
 ```
 
+A write-up of this example is in the Wolfram Example Repository: [A Toy HTTP Server](https://resources.wolframcloud.com/ExampleRepository/resources/A-toy-HTTP-server/).
+
 ### zig
 
 Start the server:
