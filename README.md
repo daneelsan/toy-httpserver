@@ -61,6 +61,12 @@ wolframscript -f httpserver.wl
 
 ### zig
 
+Tested on:
+```shell
+$ zig version
+0.14.0
+```
+
 Start the server:
 ```shell
 zig run httpserver.zig
